@@ -1,0 +1,40 @@
+body {
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-left: 5%;
+  font-size: 60px;
+  color: rgb(91, 97, 177);
+}
+
+.contact {
+  margin-bottom: 5%;
+}
+
+.contact li {
+  display: inline;
+}
+
+ul {
+  margin-bottom: 10px;
+}
+
+li span {
+  font-weight: bold;
+}
+
+.profile {
+  width: 60%;
+}
+
+ul {
+  list-style: square;
+}
+.experience {
+  width: 68%;
+}
+.skills {
+  width: 70%;
+}
