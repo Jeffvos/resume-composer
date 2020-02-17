@@ -1,6 +1,7 @@
+''' easy composing of resume, includes company name to the cv and converts to pdf'''
+import sys
 import pdfkit
 import html_creator
-import sys
 import listing_data
 
 
@@ -18,15 +19,15 @@ def create_universal():
 
 def create_from_li(url):
     ''' use for linkedin listings '''
-    company = listing_data.Check_listing().request_data(url)
+    company = listing_data.Checklisting().request_data(url)
     return create_resume(company)
 
 
 try:
-    sys_args = sys.argv[1]
+    SYS_ARGS = sys.argv[1]
     if sys_args.startswith('https'):
-        create_from_li(sys_args)
+        create_from_li(SYS_ARGS)
     else:
-        create_resume(sys_args)
+        create_resume(SYS_ARGS)
 except:
     create_universal()
